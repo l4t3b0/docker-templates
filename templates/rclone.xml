@@ -31,6 +31,7 @@
   <Config
           Name="Variable: SYNC_SRC"
           Target="SYNC_SRC"
+          Default=""
           Mode=""
           Description="source location for rclone sync/copy/move command"
           Type="Variable"
