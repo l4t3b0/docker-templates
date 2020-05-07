@@ -141,7 +141,7 @@
           Target="FAIL_URL"
           Default=""
           Mode=""
-          Description="Fail URL to perform a GET after unsuccessful execution. By default this is CHECK_URL with appended "/fail" at the end"
+          Description="Fail URL to perform a GET after unsuccessful execution. By default this is CHECK_URL with appended '/fail' at the end"
           Type="Variable"
           Display="always"
           Required="false" />
