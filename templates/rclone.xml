@@ -17,7 +17,7 @@
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>FileRun is a self-hosted Google Drive alternative. [br]Default username and password is superuser.[/br]</Description>
+  <Description>Rclone is a command line program to sync files and directories to and from cloud provider</Description>
   <Labels/>
   <Config Name="Port" Target="80" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Database Hostname" Target="FR_DB_HOST" Default="Hostname" Mode="" Description="Database Hostname" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_HOSTNAME&gt;</Config>
