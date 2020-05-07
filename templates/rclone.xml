@@ -40,6 +40,7 @@
   <Config
           Name="Variable: SYNC_DEST"
           Target="SYNC_DEST"
+          Default=""
           Mode=""
           Description="destination location for rclone sync/copy/move command"
           Type="Variable"
@@ -48,6 +49,7 @@
   <Config
           Name="Variable: SYNC_OPTS"
           Target="SYNC_OPTS"
+          Default=""
           Mode=""
           Description="additional options for rclone sync/copy/move command. Defaults to -v"
           Type="Variable"
@@ -56,6 +58,7 @@
   <Config
           Name="Variable: SYNC_OPTS_EVAL"
           Target="SYNC_OPTS_EVAL"
+          Default=""
           Mode=""
           Description="further additional options for rclone sync/copy/move command. The variables and commands in the string are first interpolated like in a shell. The interpolated string is appended to SYNC_OPTS. That means '--backup-dir /old`date -I`' first evaluates to '--backup-dir /old2019-09-12', which is then appended to SYNC_OPTS. The evaluation happens immediately before rclone is called."
           Type="Variable"
@@ -64,6 +67,7 @@
   <Config
           Name="Variable: SYNC_ONCE"
           Target="SYNC_ONCE"
+          Default=""
           Mode=""
           Description="set variable to only run the sync one time and then exit the container"
           Type="Variable"
@@ -72,6 +76,7 @@
   <Config
           Name="Variable: RCLONE_CMD"
           Target="RCLONE_CMD"
+          Default=""
           Mode=""
           Description="set variable to sync copy or move when running rclone. Defaults to sync"
           Type="Variable"
@@ -80,6 +85,7 @@
   <Config
           Name="Variable: RCLONE_DIR_CMD"
           Target="RCLONE_DIR_CMD"
+          Default=""
           Mode=""
           Description="set variable to ls or lsf for source directory check style. Defaults to ls"
           Type="Variable"
@@ -88,6 +94,7 @@
   <Config
           Name="Variable: RCLONE_DIR_CHECK_SKIP"
           Target="RCLONE_DIR_CHECK_SKIP"
+          Default=""
           Mode=""
           Description="set variable to skip source directory check before sync. Use with caution"
           Type="Variable"
@@ -96,6 +103,7 @@
   <Config
           Name="Variable: CRON"
           Target="CRON"
+          Default=""
           Mode=""
           Description="crontab schedule 0 0 * * * to perform sync every midnight. Also supprorts cron shortcuts: @yearly @monthly @weekly @daily @hourly"
           Type="Variable"
@@ -104,6 +112,7 @@
   <Config
           Name="Variable: CRON_ABORT"
           Target="CRON_ABORT"
+          Default=""
           Mode=""
           Description="crontab schedule 0 6 * * * to abort sync at 6am"
           Type="Variable"
@@ -112,6 +121,7 @@
   <Config
           Name="Variable: FORCE_SYNC"
           Target="FORCE_SYNC"
+          Default=""
           Mode=""
           Description="set variable to perform a sync upon boot"
           Type="Variable"
@@ -120,6 +130,7 @@
   <Config
           Name="Variable: CHECK_URL"
           Target="CHECK_URL"
+          Default=""
           Mode=""
           Description="healthchecks.io url or similar cron monitoring to perform a GET after a successful sync"
           Type="Variable"
@@ -128,6 +139,7 @@
   <Config
           Name="Variable: FAIL_URL"
           Target="FAIL_URL"
+          Default=""
           Mode=""
           Description="Fail URL to perform a GET after unsuccessful execution. By default this is CHECK_URL with appended '/fail' at the end"
           Type="Variable"
@@ -136,6 +148,7 @@
   <Config
           Name="Variable: OUTPUT_LOG"
           Target="OUTPUT_LOG"
+          Default=""
           Mode=""
           Description="set variable to output log file to /logs"
           Type="Variable"
@@ -144,6 +157,7 @@
   <Config
           Name="Variable: ROTATE_LOG"
           Target="ROTATE_LOG"
+          Default=""
           Mode=""
           Description="set variable to delete logs older than specified days from /logs"
           Type="Variable"
