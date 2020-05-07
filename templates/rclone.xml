@@ -19,16 +19,6 @@
   <DonateLink/>
   <Description>Rclone is a command line program to sync files and directories to and from cloud provider</Description>
   <Labels/>
-  <Config Name="Port" Target="80" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
-  <Config Name="Database Hostname" Target="FR_DB_HOST" Default="Hostname" Mode="" Description="Database Hostname" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_HOSTNAME&gt;</Config>
-  <Config Name="Database Port" Target="FR_DB_PORT" Default="3306" Mode="" Description="Database Port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
-  <Config Name="Database Name" Target="FR_DB_NAME" Default="" Mode="" Description="Database Name" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_NAME&gt;</Config>
-  <Config Name="Database User" Target="FR_DB_USER" Default="" Mode="" Description="Database User" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_USER&gt;</Config>
-  <Config Name="Database Password" Target="FR_DB_PASS" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_PASSWORD&gt;</Config>
-  <Config Name="Filerun Files Folder" Target="/user-files" Default="" Mode="rw" Description="Filerun Files Folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/filerun/</Config>
-  <Config Name="Appdata" Target="/var/www/html" Default="" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filerun/</Config>
-  <Config Name="Host Key 6" Target="APACHE_RUN_USER" Default="" Mode="" Description="Container Variable: APACHE_RUN_USER" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
-  <Config Name="Host Key 7" Target="APACHE_RUN_USER_ID" Default="" Mode="" Description="Container Variable: APACHE_RUN_USER_ID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
-  <Config Name="Host Key 8" Target="APACHE_RUN_GROUP" Default="" Mode="" Description="Container Variable: APACHE_RUN_GROUP" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
-  <Config Name="Host Key 9" Target="APACHE_RUN_GROUP_ID" Default="" Mode="" Description="Container Variable: APACHE_RUN_GROUP_ID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="Port" Target="53682" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">53682</Config>
+  <Config Name="Host Key 1" Target="SYNC_SRC" Default="" Mode="" Description="Container Variable: SYNC_SRC" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
 </Container>
