@@ -11,7 +11,7 @@
   <Overview>Rclone is a command line program to sync files and directories to and from cloud provider</Overview>
   <Category>Cloud:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/l4t3b0/docker-templates/</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/rclone.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/icons/rclone.png</Icon>
   <ExtraParams/>
   <PostArgs/>
