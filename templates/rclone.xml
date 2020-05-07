@@ -76,7 +76,7 @@
   <Config
           Name="Variable: RCLONE_CMD"
           Target="RCLONE_CMD"
-          Default=""
+          Default="sync"
           Mode=""
           Description="set variable to sync copy or move when running rclone. Defaults to sync"
           Type="Variable"
