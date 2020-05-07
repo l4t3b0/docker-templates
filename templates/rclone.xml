@@ -38,7 +38,7 @@
           Required="true" />
   <Config
           Type="Path"
-          Name="Data directory"
+          Name="SYNC_DEST directory"
           Target="/data"
           Default=""
           Mode="rw"
