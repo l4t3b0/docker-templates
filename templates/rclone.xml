@@ -20,7 +20,7 @@
   <Description>Rclone is a command line program to sync files and directories to and from cloud provider</Description>
   <Labels/>
   <Config
-          Name="Port"
+          Name="Port 1"
           Target="53682"
           Default="53682"
           Mode="tcp"
@@ -35,6 +35,6 @@
           Mode=""
           Description="Source location for rclone sync/copy/move command"
           Type="Variable"
-          Display="advanced"
+          Display="always"
           Required="false" />
 </Container>
