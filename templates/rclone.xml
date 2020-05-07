@@ -49,7 +49,7 @@
   <Config
           Name="Variable: SYNC_OPTS"
           Target="SYNC_OPTS"
-          Default=""
+          Default="-v"
           Description="additional options for rclone sync/copy/move command. Defaults to -v"
           Type="Variable"
           Display="always"
@@ -73,19 +73,19 @@
   <Config
           Name="Variable: RCLONE_CMD"
           Target="RCLONE_CMD"
-          Default=""
+          Default="sync"
           Description="set variable to sync copy or move when running rclone. Defaults to sync"
           Type="Variable"
           Display="always"
-          Required="false" />
+          Required="true" />
   <Config
           Name="Variable: RCLONE_DIR_CMD"
           Target="RCLONE_DIR_CMD"
-          Default=""
+          Default="ls"
           Description="set variable to ls or lsf for source directory check style. Defaults to ls"
           Type="Variable"
           Display="always"
-          Required="false" />
+          Required="true" />
   <Config
           Name="Variable: RCLONE_DIR_CHECK_SKIP"
           Target="RCLONE_DIR_CHECK_SKIP"
