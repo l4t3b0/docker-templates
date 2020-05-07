@@ -44,7 +44,15 @@
           Mode=""
           Description="destination location for rclone sync/copy/move command"
           Type="Variable"
-          Display="always"
+          Display="hidden"
+          Required="true" />
+  <Config
+          Type="Path"
+          Name="Data directory"
+          Target="/data"
+          Default=""
+          Mode="rw"
+          Description="destination location for rclone sync/copy/move command"
           Required="true" />
   <Config
           Name="Variable: SYNC_OPTS"
