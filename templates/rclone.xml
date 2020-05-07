@@ -32,7 +32,6 @@
           Name="Variable: SYNC_SRC"
           Target="SYNC_SRC"
           Default=""
-          Mode=""
           Description="source location for rclone sync/copy/move command"
           Type="Variable"
           Display="always"
@@ -41,10 +40,9 @@
           Name="Variable: SYNC_DEST"
           Target="SYNC_DEST"
           Default="/data"
-          Mode=""
           Description="destination location for rclone sync/copy/move command"
           Type="Variable"
-          Display="hidden"
+          Display="always-hide"
           Required="true" />
   <Config
           Type="Path"
