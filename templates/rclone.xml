@@ -19,6 +19,22 @@
   <DonateLink/>
   <Description>Rclone is a command line program to sync files and directories to and from cloud provider</Description>
   <Labels/>
-  <Config Name="Port" Target="53682" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">53682</Config>
-  <Config Name="Host Key 1" Target="SYNC_SRC" Default="" Mode="" Description="Container Variable: SYNC_SRC" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config
+          Name="Port"
+          Target="53682"
+          Default="53682"
+          Mode="tcp"
+          Description="Forwarded port for login"
+          Type="Port"
+          Display="always"
+          Required="true"/>
+  <Config
+          Name="Variable: SYNC_SRC"
+          Target="SYNC_SRC"
+          Default=""
+          Mode=""
+          Description="Source location for rclone sync/copy/move command"
+          Type="Variable"
+          Display="advanced"
+          Required="false" />
 </Container>
