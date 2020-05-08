@@ -33,15 +33,8 @@
           Description="source location for rclone sync/copy/move command"
           Type="Variable"
           Display="always"
-          Required="true" />
-  <Config
-          Type="Path 2"
-          Name="SYNC_DEST directory"
-          Target="/data"
-          Default=""
-          Mode="rw"
-          Description="destination location for rclone sync/copy/move command"
-          Required="true" />
+          Required="true" Mask="false"/>
+  <Config Name="SYNC_DEST directory" Target="/data" Default="" Mode="rw" Description="destination location for rclone sync/copy/move command" Type="Path" Required="true" Mask="false"/>
   <Config
           Name="Variable: SYNC_OPTS"
           Target="SYNC_OPTS"
@@ -49,15 +42,15 @@
           Description="additional options for rclone sync/copy/move command. Defaults to -v"
           Type="Variable"
           Display="always"
-          Required="false" />
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: SYNC_OPTS_EVAL"
           Target="SYNC_OPTS_EVAL"
           Default=""
           Description="further additional options for rclone sync/copy/move command. The variables and commands in the string are first interpolated like in a shell. The interpolated string is appended to SYNC_OPTS. That means '--backup-dir /old`date -I`' first evaluates to '--backup-dir /old2019-09-12', which is then appended to SYNC_OPTS. The evaluation happens immediately before rclone is called."
           Type="Variable"
-          Display="always"
-          Required="false" />
+          Display="advanced"
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: SYNC_ONCE"
           Target="SYNC_ONCE"
@@ -65,31 +58,31 @@
           Description="set variable to only run the sync one time and then exit the container"
           Type="Variable"
           Display="always"
-          Required="false" />
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: RCLONE_CMD"
           Target="RCLONE_CMD"
           Default="sync"
           Description="set variable to sync copy or move when running rclone. Defaults to sync"
           Type="Variable"
-          Display="always"
-          Required="true" />
+          Display="advanced"
+          Required="true" Mask="false"/>
   <Config
           Name="Variable: RCLONE_DIR_CMD"
           Target="RCLONE_DIR_CMD"
           Default="ls"
           Description="set variable to ls or lsf for source directory check style. Defaults to ls"
           Type="Variable"
-          Display="always"
-          Required="true" />
+          Display="advanced"
+          Required="true" Mask="false"/>
   <Config
           Name="Variable: RCLONE_DIR_CHECK_SKIP"
           Target="RCLONE_DIR_CHECK_SKIP"
           Default=""
           Description="set variable to skip source directory check before sync. Use with caution"
           Type="Variable"
-          Display="always"
-          Required="false" />
+          Display="advanced"
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: CRON"
           Target="CRON"
@@ -97,7 +90,7 @@
           Description="crontab schedule 0 0 * * * to perform sync every midnight. Also supprorts cron shortcuts: @yearly @monthly @weekly @daily @hourly"
           Type="Variable"
           Display="always"
-          Required="false" />
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: CRON_ABORT"
           Target="CRON_ABORT"
@@ -105,7 +98,7 @@
           Description="crontab schedule 0 6 * * * to abort sync at 6am"
           Type="Variable"
           Display="always"
-          Required="false" />
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: FORCE_SYNC"
           Target="FORCE_SYNC"
@@ -113,45 +106,32 @@
           Description="set variable to perform a sync upon boot"
           Type="Variable"
           Display="always"
-          Required="false" />
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: CHECK_URL"
           Target="CHECK_URL"
           Default=""
           Description="healthchecks.io url or similar cron monitoring to perform a GET after a successful sync"
           Type="Variable"
-          Display="always"
-          Required="false" />
+          Display="advanced"
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: FAIL_URL"
           Target="FAIL_URL"
           Default=""
           Description="Fail URL to perform a GET after unsuccessful execution. By default this is CHECK_URL with appended '/fail' at the end"
           Type="Variable"
-          Display="always"
-          Required="false" />
+          Display="advanced"
+          Required="false" Mask="false"/>
   <Config
           Name="Variable: OUTPUT_LOG"
           Target="OUTPUT_LOG"
           Default=""
           Description="set variable to output log file to /logs"
           Type="Variable"
-          Display="always"
-          Required="false" />
-  <Config
-          Name="Variable: ROTATE_LOG"
-          Target="ROTATE_LOG"
-          Default=""
-          Description="set variable to delete logs older than specified days from /logs"
-          Type="Variable"
-          Display="always"
-          Required="false" />
-  <Config
-          Name="Variable: SYNC_DEST"
-          Target="SYNC_DEST"
-          Default="/data"
-          Description="destination location for rclone sync/copy/move command"
-          Type="Variable"
-          Required="false">/data</Config>
+          Display="advanced"
+          Required="false" Mask="false"/>
+  <Config Name="Variable: ROTATE_LOG" Target="ROTATE_LOG" Default="" Description="set variable to delete logs older than specified days from /logs" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Variable: SYNC_DEST" Target="SYNC_DEST" Default="/data" Description="destination location for rclone sync/copy/move command" Type="Variable" Display="advanced" Required="false" Mask="false">/data</Config>
   <Config Name="Appdata directory" Target="/config" Default="" Mode="rw" Description="Appdata" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
 </Container>
