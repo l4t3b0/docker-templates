@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ubuntu</Name>
+  <Repository>ubuntu</Repository>
+  <Registry>https://hub.docker.com/_/ubuntu/</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://</Support>
+  <Project>https://ubuntu.com/</Project>
+  <Overview>Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things. It is the world's most popular operating system across public clouds and OpenStack clouds.</Overview>
+  <Category>OS:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/ubuntu.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/icons/ubuntu.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things. It is the world's most popular operating system across public clouds and OpenStack clouds.</Description>
+  <Labels/>
+  <Config Name="Variable: LANG" Target="LANG" Default="C.UTF-8" Description="Setting the default locale" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
