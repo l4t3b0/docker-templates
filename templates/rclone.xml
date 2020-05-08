@@ -153,12 +153,5 @@
           Description="destination location for rclone sync/copy/move command"
           Type="Variable"
           Required="false">/data</Config>
-  <Config
-          Type="Path 1"
-          Name="/config directory"
-          Target="/config"
-          Default="/mnt/user/appdata/rclone-onedrive-l4t3b0"
-          Mode="rw"
-          Description="destination location for rclone sync/copy/move command"
-          Required="true" />
+  <Config Name="Appdata directory" Target="/config" Default="" Mode="rw" Description="Appdata" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
 </Container>
