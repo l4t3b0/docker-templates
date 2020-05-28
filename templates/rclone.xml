@@ -76,6 +76,14 @@
           Display="advanced"
           Required="true" Mask="false"/>
   <Config
+          Name="Variable: RCLONE_DIR_CMD_DEPTH"
+          Target="RCLONE_DIR_CMD_DEPTH"
+          Default="1"
+          Description="set the limit of the recursion depth to this. Defaults to 1"
+          Type="Variable"
+          Display="advanced"
+          Required="true" Mask="false"/>
+  <Config
           Name="Variable: RCLONE_DIR_CHECK_SKIP"
           Target="RCLONE_DIR_CHECK_SKIP"
           Default=""
