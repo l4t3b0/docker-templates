@@ -70,7 +70,7 @@
   <Config
           Name="Variable: RCLONE_DIR_CMD"
           Target="RCLONE_DIR_CMD"
-          Default="ls"
+          Default="lsf"
           Description="set variable to ls or lsf for source directory check style. Defaults to ls"
           Type="Variable"
           Display="advanced"
