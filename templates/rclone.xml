@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>rclone</Name>
-  <Repository>pfidr/rclone</Repository>
-  <Registry>https://hub.docker.com/r/pfidr/rclone/</Registry>
+  <Repository>l4t3b0/rclone</Repository>
+  <Registry>https://hub.docker.com/r/l4t3b0/rclone/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
