@@ -148,8 +148,18 @@
           Display="advanced"
           Required="false" Mask="false"/>
   <Config
-          Name="Appdata directory"
-          Target="/config"
+          Name="Configuration directory"
+          Target="/etc/rclone"
+          Default=""
+          Mode="rw"
+          Description="Appdata"
+          Type="Path"
+          Display="advanced"
+          Required="false" Mask="false">
+  </Config>
+  <Config
+          Name="Log directory"
+          Target="/var/log/rclone"
           Default=""
           Mode="rw"
           Description="Appdata"
