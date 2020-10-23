@@ -36,7 +36,7 @@
           Required="true" Mask="false"/>
   <Config
           Name="Variable: SYNC_DEST"
-          Target="/data"
+          Target="SYNC_DEST"
           Default=""
           Mode="rw"
           Description="destination location for rclone sync/copy/move command"
