@@ -36,7 +36,7 @@
           Required="true" Mask="false"/>
   <Config
           Name="Variable: SYNC_DEST"
-          Target="SYNC_DEST"
+          Target="/data"
           Default=""
           Mode="rw"
           Description="destination location for rclone sync/copy/move command"
@@ -139,6 +139,22 @@
           Type="Variable"
           Display="advanced"
           Required="false" Mask="false"/>
-  <Config Name="Variable: ROTATE_LOG" Target="ROTATE_LOG" Default="" Description="set variable to delete logs older than specified days from /logs" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Appdata directory" Target="/config" Default="" Mode="rw" Description="Appdata" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
+  <Config
+          Name="Variable: ROTATE_LOG"
+          Target="ROTATE_LOG"
+          Default=""
+          Description="set variable to delete logs older than specified days from /logs"
+          Type="Variable"
+          Display="advanced"
+          Required="false" Mask="false"/>
+  <Config
+          Name="Appdata directory"
+          Target="/config"
+          Default=""
+          Mode="rw"
+          Description="Appdata"
+          Type="Path"
+          Display="advanced"
+          Required="false" Mask="false">
+  </Config>
 </Container>
