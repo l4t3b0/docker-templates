@@ -52,8 +52,8 @@
           Display="advanced"
           Required="false" Mask="false"/>
   <Config
-          Name="Variable: SYNC_ONCE"
-          Target="SYNC_ONCE"
+          Name="Variable: SYNC_ON_STARTUP"
+          Target="SYNC_ON_STARTUP"
           Default=""
           Description="set variable to only run the sync one time and then exit the container"
           Type="Variable"
@@ -108,24 +108,16 @@
           Display="always"
           Required="false" Mask="false"/>
   <Config
-          Name="Variable: FORCE_SYNC"
-          Target="FORCE_SYNC"
-          Default=""
-          Description="set variable to perform a sync upon boot"
-          Type="Variable"
-          Display="always"
-          Required="false" Mask="false"/>
-  <Config
-          Name="Variable: CHECK_URL"
-          Target="CHECK_URL"
+          Name="Variable: HEALTHCHECKS_IO_URL"
+          Target="HEALTHCHECKS_IO_URL"
           Default=""
           Description="healthchecks.io url or similar cron monitoring to perform a GET after a successful sync"
           Type="Variable"
           Display="advanced"
           Required="false" Mask="false"/>
   <Config
-          Name="Variable: FAIL_URL"
-          Target="FAIL_URL"
+          Name="Variable: HEALTHCHECKS_IO_FAIL_URL"
+          Target="HEALTHCHECKS_IO_FAIL_URL"
           Default=""
           Description="Fail URL to perform a GET after unsuccessful execution. By default this is CHECK_URL with appended '/fail' at the end"
           Type="Variable"
