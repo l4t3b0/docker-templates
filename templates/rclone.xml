@@ -62,7 +62,7 @@
   <Config
           Name="Variable: SYNC_ON_STARTUP"
           Target="SYNC_ON_STARTUP"
-          Default=""
+          Default="true"
           Description="set variable to only run the sync one time and then exit the container"
           Type="Variable"
           Display="always"
@@ -102,7 +102,7 @@
   <Config
           Name="Variable: CRON"
           Target="CRON"
-          Default=""
+          Default="@weekly"
           Description="crontab schedule 0 0 * * * to perform sync every midnight. Also supprorts cron shortcuts: @yearly @monthly @weekly @daily @hourly"
           Type="Variable"
           Display="always"
