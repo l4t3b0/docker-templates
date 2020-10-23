@@ -48,7 +48,7 @@
           Default="-v"
           Description="additional options for rclone sync/copy/move command. Defaults to -v"
           Type="Variable"
-          Display="always"
+          Display="advanced"
           Required="false" Mask="false"/>
   <Config
           Name="Variable: SYNC_OPTS_EVAL"
@@ -112,7 +112,7 @@
           Default=""
           Description="crontab schedule 0 6 * * * to abort sync at 6am"
           Type="Variable"
-          Display="always"
+          Display="advanced"
           Required="false" Mask="false"/>
   <Config
           Name="Variable: HEALTHCHECKS_IO_URL"
@@ -120,7 +120,7 @@
           Default=""
           Description="healthchecks.io url or similar cron monitoring to perform a GET after a successful sync"
           Type="Variable"
-          Display="advanced"
+          Display="always"
           Required="false" Mask="false"/>
   <Config
           Name="Variable: HEALTHCHECKS_IO_FAIL_URL"
