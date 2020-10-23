@@ -124,10 +124,10 @@
           Display="always"
           Required="false" Mask="false"/>
   <Config
-          Name="Variable: LOG=enabled"
-          Target="OUTPUT_LOG"
+          Name="Variable: LOG_ENABLED"
+          Target="LOG_ENABLED"
           Default="true"
-          Description="set variable to output log file to /logs"
+          Description="set variable to output log files to /var/log/rclone"
           Type="Variable"
           Display="advanced"
           Required="false" Mask="false"/>
