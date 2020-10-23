@@ -34,7 +34,14 @@
           Type="Variable"
           Display="always"
           Required="true" Mask="false"/>
-  <Config Name="SYNC_DEST directory" Target="/data" Default="" Mode="rw" Description="destination location for rclone sync/copy/move command" Type="Path" Required="true" Mask="false"/>
+  <Config
+          Name="Variable: SYNC_DEST"
+          Target="/data"
+          Default=""
+          Mode="rw"
+          Description="destination location for rclone sync/copy/move command"
+          Type="Path"
+          Required="true" Mask="false"/>
   <Config
           Name="Variable: SYNC_OPTS"
           Target="SYNC_OPTS"
