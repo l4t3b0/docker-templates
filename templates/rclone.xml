@@ -124,17 +124,9 @@
           Display="always"
           Required="false" Mask="false"/>
   <Config
-          Name="Variable: HEALTHCHECKS_IO_FAIL_URL"
-          Target="HEALTHCHECKS_IO_FAIL_URL"
-          Default=""
-          Description="Fail URL to perform a GET after unsuccessful execution. By default this is CHECK_URL with appended '/fail' at the end"
-          Type="Variable"
-          Display="advanced"
-          Required="false" Mask="false"/>
-  <Config
-          Name="Variable: OUTPUT_LOG"
+          Name="Variable: LOG=enabled"
           Target="OUTPUT_LOG"
-          Default=""
+          Default="true"
           Description="set variable to output log file to /logs"
           Type="Variable"
           Display="advanced"
