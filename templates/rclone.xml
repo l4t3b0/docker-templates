@@ -41,7 +41,7 @@
           Mode="rw"
           Description="destination location for rclone sync/copy/move command"
           Type="Path"
-          Display="advanced"
+          Display="always"
           Required="true" Mask="false"/>
   <Config
           Name="Variable: SYNC_OPTS"
