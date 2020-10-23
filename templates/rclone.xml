@@ -35,7 +35,7 @@
           Display="always"
           Required="true" Mask="false"/>
   <Config
-          Name="Variable: SYNC_DEST"
+          Name="Destination directory"
           Target="/data"
           Default=""
           Mode="rw"
