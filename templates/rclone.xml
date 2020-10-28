@@ -84,22 +84,6 @@
           Display="advanced"
           Required="true" Mask="false"/>
   <Config
-          Name="Variable: RCLONE_DIR_CMD_DEPTH"
-          Target="RCLONE_DIR_CMD_DEPTH"
-          Default="1"
-          Description="set the limit of the recursion depth to this. Defaults to 1"
-          Type="Variable"
-          Display="advanced"
-          Required="true" Mask="false"/>
-  <Config
-          Name="Variable: RCLONE_DIR_CHECK_SKIP"
-          Target="RCLONE_DIR_CHECK_SKIP"
-          Default=""
-          Description="set variable to skip source directory check before sync. Use with caution"
-          Type="Variable"
-          Display="advanced"
-          Required="false" Mask="false"/>
-  <Config
           Name="Variable: CRON"
           Target="CRON"
           Default="@weekly"
@@ -132,7 +116,7 @@
           Display="advanced"
           Required="false" Mask="false"/>
   <Config
-          Name="Variable: ROTATE_LOG"
+          Name="Variable: LOG_ROTATE"
           Target="ROTATE_LOG"
           Default=""
           Description="set variable to delete logs older than specified days from /logs"
