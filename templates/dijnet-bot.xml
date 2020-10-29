@@ -11,7 +11,7 @@
   <Overview>A Díjnet Bot lementi az összes Díjnet-en tárolt számládat, így azok immáron még egy helyen, Nálad is meglesznek.</Overview>
   <Category>Cloud:</Category>
   <TemplateURL>https://raw.githubusercontent.com/l4t3b0/unraid-docker-templates/master/templates/dijnet-bot.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/icons/dijnet-bot.png</Icon>
+  <Icon>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/icons/dijnet.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DonateText/>
