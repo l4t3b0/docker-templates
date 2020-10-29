@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dijnet-bot</Name>
+  <Repository>l4t3b0/dijnet-bot</Repository>
+  <Registry>https://hub.docker.com/r/l4t3b0/dijnet-bot</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://</Support>
+  <Project>https://github.com/juzraai/dijnet-bot</Project>
+  <Overview>A Díjnet Bot lementi az összes Díjnet-en tárolt számládat, így azok immáron még egy helyen, Nálad is meglesznek.</Overview>
+  <Category>Cloud:</Category>
+  <TemplateURL>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/rclone.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/icons/rclone.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A Díjnet Bot lementi az összes Díjnet-en tárolt számládat, így azok immáron még egy helyen, Nálad is meglesznek.</Description>
+  <Labels/>
+  <Config
+          Name="Variable: DIJNET_USER"
+          Target="DIJNET_USER"
+          Default=""
+          Description="username for the dijnet service"
+          Type="Variable"
+          Display="always"
+          Required="true" Mask="false"/>
+  <Config
+          Name="Variable: DIJNET_PASS"
+          Target="DIJNET_PASS"
+          Default=""
+          Description="password for the dijnet service"
+          Type="Variable"
+          Display="always"
+          Required="true" Mask="false"/>
+  <Config
+          Name="Destination directory"
+          Target="/data"
+          Default=""
+          Mode="rw"
+          Description="destination location for dijnet-bot bills"
+          Type="Path"
+          Display="always"
+          Required="true" Mask="false"/>
+  <Config
+          Name="Variable: SYNC_ON_STARTUP"
+          Target="SYNC_ON_STARTUP"
+          Default="true"
+          Description="set variable to only run the sync one time and then exit the container"
+          Type="Variable"
+          Display="always"
+          Required="false" Mask="false"/>
+  <Config
+          Name="Variable: CRON"
+          Target="CRON"
+          Default="@weekly"
+          Description="crontab schedule 0 0 * * * to perform sync every midnight. Also supprorts cron shortcuts: @yearly @monthly @weekly @daily @hourly"
+          Type="Variable"
+          Display="always"
+          Required="false" Mask="false"/>
+  <Config
+          Name="Variable: CRON_ABORT"
+          Target="CRON_ABORT"
+          Default=""
+          Description="crontab schedule 0 6 * * * to abort sync at 6am"
+          Type="Variable"
+          Display="advanced"
+          Required="false" Mask="false"/>
+  <Config
+          Name="Variable: HEALTHCHECKS_IO_URL"
+          Target="HEALTHCHECKS_IO_URL"
+          Default=""
+          Description="healthchecks.io url or similar cron monitoring to perform a GET after a successful sync"
+          Type="Variable"
+          Display="always"
+          Required="false" Mask="false"/>
+  <Config
+          Name="Variable: LOG_ENABLED"
+          Target="LOG_ENABLED"
+          Default="true"
+          Description="set variable to output log files to /var/log/dijnet-bot"
+          Type="Variable"
+          Display="advanced"
+          Required="false" Mask="false"/>
+  <Config
+          Name="Variable: LOG_ROTATE"
+          Target="ROTATE_LOG"
+          Default=""
+          Description="set variable to delete logs older than specified days from /var/log/dijnet-bot"
+          Type="Variable"
+          Display="advanced"
+          Required="false" Mask="false"/>
+  <Config
+          Name="Configuration directory"
+          Target="/etc/dijnet-bot"
+          Default=""
+          Mode="rw"
+          Description="Appdata"
+          Type="Path"
+          Display="advanced"
+          Required="false" Mask="false">
+  </Config>
+  <Config
+          Name="Log directory"
+          Target="/var/log/dijnet-bot"
+          Default=""
+          Mode="rw"
+          Description="Appdata"
+          Type="Path"
+          Display="advanced"
+          Required="false" Mask="false">
+  </Config>
+</Container>
