@@ -10,8 +10,8 @@
   <Project>https://github.com/juzraai/dijnet-bot</Project>
   <Overview>A Díjnet Bot lementi az összes Díjnet-en tárolt számládat, így azok immáron még egy helyen, Nálad is meglesznek.</Overview>
   <Category>Cloud:</Category>
-  <TemplateURL>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/rclone.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/icons/rclone.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/l4t3b0/unraid-docker-templates/master/templates/dijnet-bot.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/l4t3b0/docker-templates/master/templates/icons/dijnet-bot.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <DonateText/>
@@ -31,6 +31,14 @@
           Target="DIJNET_PASS"
           Default=""
           Description="password for the dijnet service"
+          Type="Variable"
+          Display="always"
+          Required="true" Mask="false"/>
+  <Config
+          Name="Variable: SLEEP"
+          Target="SLEEP"
+          Default="3"
+          Description="Delay in seconds before every request sent to dijnet"
           Type="Variable"
           Display="always"
           Required="true" Mask="false"/>
@@ -76,17 +84,17 @@
           Display="always"
           Required="false" Mask="false"/>
   <Config
-          Name="Variable: LOG_ENABLED"
-          Target="LOG_ENABLED"
-          Default="true"
-          Description="set variable to output log files to /var/log/dijnet-bot"
+          Name="Variable: LOG_MODE"
+          Target="LOG_MODE"
+          Default="default"
+          Description="default / verbose / quite"
           Type="Variable"
           Display="advanced"
           Required="false" Mask="false"/>
   <Config
           Name="Variable: LOG_ROTATE"
           Target="ROTATE_LOG"
-          Default=""
+          Default="365"
           Description="set variable to delete logs older than specified days from /var/log/dijnet-bot"
           Type="Variable"
           Display="advanced"
