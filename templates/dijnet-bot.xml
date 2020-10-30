@@ -101,7 +101,7 @@
           Required="false" Mask="false"/>
   <Config
           Name="Configuration directory"
-          Target="/etc/dijnet-bot"
+          Target="/etc/dijnet"
           Default=""
           Mode="rw"
           Description="Appdata"
@@ -111,7 +111,7 @@
   </Config>
   <Config
           Name="Log directory"
-          Target="/var/log/dijnet-bot"
+          Target="/var/log/dijnet"
           Default=""
           Mode="rw"
           Description="Appdata"
