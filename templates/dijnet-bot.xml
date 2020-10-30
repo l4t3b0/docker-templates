@@ -122,7 +122,7 @@
   <Config
           Name="User ID"
           Target="PUID"
-          Default="99"
+          Default="1000"
           Mode=""
           Description="Set to Desired User ID"
           Type="Variable"
@@ -132,7 +132,7 @@
   <Config
           Name="Group ID"
           Target="PGID"
-          Default="100"
+          Default="98"
           Mode=""
           Description="Set to Desired Group ID"
           Type="Variable"
