@@ -60,14 +60,6 @@
           Display="always"
           Required="false" Mask="false"/>
   <Config
-          Name="Variable: LOG_ROTATE"
-          Target="ROTATE_LOG"
-          Default="365"
-          Description="set variable to delete logs older than specified days from /var/log/dijnet-bot"
-          Type="Variable"
-          Display="advanced"
-          Required="false" Mask="false"/>
-  <Config
           Name="Configuration directory"
           Target="/etc/dijnet-bot"
           Default=""
