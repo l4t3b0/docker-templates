@@ -19,30 +19,6 @@
   <Description>A Díjnet Bot lementi az összes Díjnet-en tárolt számládat, így azok immáron még egy helyen, Nálad is meglesznek.</Description>
   <Labels/>
   <Config
-          Name="Variable: DIJNET_USER"
-          Target="DIJNET_USER"
-          Default=""
-          Description="username for the dijnet service"
-          Type="Variable"
-          Display="always"
-          Required="true" Mask="false"/>
-  <Config
-          Name="Variable: DIJNET_PASS"
-          Target="DIJNET_PASS"
-          Default=""
-          Description="password for the dijnet service"
-          Type="Variable"
-          Display="always"
-          Required="true" Mask="false"/>
-  <Config
-          Name="Variable: SLEEP"
-          Target="SLEEP"
-          Default="3"
-          Description="Delay in seconds before every request sent to dijnet"
-          Type="Variable"
-          Display="always"
-          Required="true" Mask="false"/>
-  <Config
           Name="Destination directory"
           Target="/data"
           Default=""
@@ -52,8 +28,8 @@
           Display="always"
           Required="true" Mask="false"/>
   <Config
-          Name="Variable: SYNC_ON_STARTUP"
-          Target="SYNC_ON_STARTUP"
+          Name="Variable: EXECUTE_ON_STARTUP"
+          Target="EXECUTE_ON_STARTUP"
           Default="true"
           Description="set variable to only run the sync one time and then exit the container"
           Type="Variable"
@@ -82,14 +58,6 @@
           Description="healthchecks.io url or similar cron monitoring to perform a GET after a successful sync"
           Type="Variable"
           Display="always"
-          Required="false" Mask="false"/>
-  <Config
-          Name="Variable: LOG_MODE"
-          Target="LOG_MODE"
-          Default="default"
-          Description="default / verbose / quite"
-          Type="Variable"
-          Display="advanced"
           Required="false" Mask="false"/>
   <Config
           Name="Variable: LOG_ROTATE"
