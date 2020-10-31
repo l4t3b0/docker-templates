@@ -96,7 +96,7 @@
           Type="Variable"
           Display="advanced"
           Required="true"
-          Mask="false">99</Config>
+          Mask="false">1000</Config>
   <Config
           Name="Group ID"
           Target="PGID"
@@ -106,5 +106,5 @@
           Type="Variable"
           Display="advanced"
           Required="true"
-          Mask="false">100</Config>
+          Mask="false">98</Config>
 </Container>
